@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nike Page</title>
+<!-- Latest compiled and minified CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+/*=======================header_start================================  */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+.logo {
+	width: 60px;
+	margin: 0 auto;
+}
+
+.logo a {
+	display: inline-block;
+}
+
+.logo img {
+	max-height: 37px;
+}
+
+img {
+	border: 0;
+}
+.header_layout_1 {
+	position: fixed;
+	width: 100%; 
+	z-index: 192;
+	height: 108px;
+}
+
+.header_gnb_1 {
+	position: relative;
+	color: #8d8d8d;
+	font-size: 12px;
+	background: #ffffff;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
+	z-index: 102;
+	height: 38px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.header_gnb_1 a {
+	display: inline-block;
+	padding: 10px 0;
+	color: #8d8d8d;
+}
+
+.gnb_1_left {
+	float: left;
+}
+
+.gnb_1_left ul {
+	list-style: none;
+}
+
+.gnb_1_left li {
+	display: inline-block;
+	border-right: 1px solid #e5e5e5;
+}
+
+.gnb_1_left li>a {
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 20px;
+	min-width: 50px;
+	text-align: center;
+	vertical-align: top;
+	color: #8d8d8d;
+}
+
+.gnb_1_right {
+	float: right;
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+
+.gnb_1_right ul {
+	list-style: none;
+}
+
+.gnb_1_right li {
+	position: relative;
+	display: inline-block;
+	margin-left: 0;
+}
+
+.gnb_1_right a {
+	display: inline-block;
+	padding: 0 11px;
+	line-height: 38px;
+}
+
+.contents {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: #ffffff;
+}
+
+.header-lnb {
+	position: relative;
+	display: table;
+	width: 100%;
+	hegiht: 68px;
+	margin: 0 auto;
+	padding: 0 32px 0 30px;
+	font-size: 14px;
+	text-align: center;
+	box-sizing: border-box;
+	z-index: 101;
+	background-color: #ffffff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.header-logo {
+	display: table-cell;
+	width: 194px;
+	height: 68px;
+	padding: 15px 0;
+	text-align: left;
+	box-sizing: border-box;
+	vertical-align: middle;
+	font-size: 28.05px;
+	color: #8d8d8d;
+}
+
+.header-menu_onedepth {
+	display: table-cell;
+	padding: 0;
+	line-height: 26px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.header-lnb ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.onedepth-list {
+	position: static;
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.onedepth-list a {
+	position: relative;
+	font-size: 16px;
+	font-weight: 400;
+	color: #111;
+	font-weight: bold;
+}
+
+.gnb-search-field {
+	display: table-cell;
+	width: 224px;
+	padding-top: 14px;
+}
+
+.search-field {
+	position: relative;
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+/* ===================================================contents_start========================================= */
+.wrapper {
+	min-height: 100%;
+	padding-top: 108px;
+}
+
+.content-area {
+	display: block;
+}
+
+#global-slide-banner {
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.content-container {
+	margin-bottom: 0;
+}
+
+.card-overlay {
+	text-align: left;
+	left: 24px;
+	justify-content: flex-end;
+	top: 48px;
+	height: calc(100% -72px);
+}
+
+.card_type_1 {
+	position: static;
+	padding-left: 0;
+	text-align: center;
+	width: 100% !important;
+	margin-top: 24px;
+	margin-bottom: 80px;
+}
+
+.video-card {
+	margin-left: 10%;
+	max-width: 1808px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.main {
+	letter-spacing: -1px;
+	font-size: 40px;
+	line-height: .9;
+	margin: 13px 0;
+	font-weight: 700;
+	color: #111;
+}
+
+.main_1 {
+	letter-spacing: -1px;
+	font-weight: 400;
+	color: #111;
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+/*==========================================================Footer-start  */
+footer {
+	positon: relative;
+	clear: both;
+	min-height: 150px;
+	color: #999999;
+	margin:0 auto;
+	background-color: #111111;
+}
+
+.footer-contents {
+	max-width: 100%;
+	margin: 0 auto 0 auto;
+	line-height: 18px;
+}
+
+.footer-nav {
+	padding: 40px 0;
+	letter-spacing: 0.5px;
+	color: #999999;
+	position: relative;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.uk-grid {
+	margin-left: -20px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.uk-grid>* {
+	padding-left: 20px;
+	flex: none;
+	margin: 0;
+	float: left;
+}
+
+.footer_1 {
+	width: 25%;
+}
+
+.footer_1 a {
+	color: #ffffff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.footer_2 {
+	width: 25%;
+}
+
+.footer_2 a {
+	margin-top: 8px;
+	text-decoration: none;
+	color: #999999;
+	font-size: 11px;
+}
+
+.footer_sub {
+	padding-bottom: 0;
+	font-weight: normal;
+	font-size: 13px;
+	color: #ffffff;
+}
+
+.footer-copy {
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	font-size: 10px;
+	padding: 15px 32px;
+}
+.uk-clear-fix {
+	display: table;
+	clear: both;
+	width:100%;
+}
+
+.uk-float-left {
+	float: left;
+	max-width: 100%;
+}
+
+.uk-float-left a {
+	font-weight: normarl;
+	color: #111;
+	text-decoration: none;
+	margin-right: 15px;
+	padding-left: 22px;
+	color: #ffffff;
+	line-height: 11px;
+	vertical-align: middle;
+}
+.uk-float-right {
+	float:right;
+	max-width:100%;
+}
+.uk-float-right a{
+	color: #999;
+	text-decoration: none;
+	padding-left: 16px;
+}
+.footer-info{
+	padding: 16px 0 25px;
+	font-size:11px;
+}
+.footer-maxwidth{
+	position: relative;
+	max-width:880px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	list-style: none;
+}
+.uk-width-medium{
+	padding-left:0;
+	float: left;
+	margin:0;
+	flex: none;
+	width:50%;
+}
+.uk-width-medium2{
+	width: calc(50%-20px);
+	flex:none;
+	margin:0;
+	float: left;
+}
+</style>
+
+</head>
+<body>
+	<!--========================================== Header start  -->
+	<div class="header_layout_1">
+		<div class="header_gnb_1">
+			<ul class="gnb_1_left">
+				<li><a href="/web_ex5/index.html"><span>Nike</span></a></li>
+				<li><a href="#"><span>Nike Membership</span></a>
+				<li><a href="#"><span>Jordan</span></a>
+				<li><a href="#"><span>Converse</span></a>
+			</ul>
+			<ul class="gnb_1_right">
+				<li><span><a href="/web_ex5/member/accept.html">회원가입</a>/<a href="#">로그인</a></span></li>
+				<li><span><a href="/web_ex5/notice.html">공지사항</a></span></li>
+				<li><span><a href="#">장바구니</a></span></li>
+				<li><span><a href="#">Country</a></span></li>
+			</ul>
+		</div>
+		<article class="contents">
+			<nav class="header-lnb">
+				<a class="header-logo" href="/web_ex5/index.html"><span><img alt="Nike" src="/web_ex5/images/나이키.png">  </span></a>
+				<ul class="header-menu_onedepth">
+					<li class="onedepth-list"><a href="#" data-click-area="GNB"
+						data-click-name="MEN" class="active">MEN</a></li>
+					<li class="onedepth-list"><a href="#">WOMEN</a></li>
+					<li class="onedepth-list"><a href="#">BOYS</a></li>
+					<li class="onedepth-list"><a href="#">GIRLS</a></li>
+				</ul>
+				<div class="gnb-search-field">
+					<div class="search-field">
+						<span><span class="glyphicon glyphicon-search"></span><input
+							type="search" id="search" placeholder="검색"> </span>
+					</div>
+				</div>
+			</nav>
+		</article>
+	</div>
+	<!--====================================================Header End  -->
+	<!--================================================================contents Start  -->
+	<section class="wrapper">
+		<section class="content-area">
+			<section class="pt_main">
+				<div id="global-slide-banner">
+
+					<div class="video-card">
+						<video autoplay="autoplay" loop="loop" muted="muted">
+							<source
+								src="https://nikevideo.nike.com/72451143001/201904/1682/72451143001_6027800381001_6027796833001.mp4"
+								type="video/mp4">
+						</video>
+					</div>
+					<div class="card_type_1">
+						<div class="card-overlay-content">
+							<p class="main">나이키 에픽 팬텀 리액트</p>
+						</div>
+						<div class="main_1">
+							새롭게 선보이는 나이키 에픽 팬텀 리액트로 더욱 다양해진 나이키 리액트 시리즈<br> 리액트 폼의 뛰어난
+							쿠셔닝의 반응성에 레이스리스갑피를 더해 편안한 착용과 핏을 선사합니다.<br> 나이키 에픽 팬텀 리액트와
+							함께 러닝을 즐겨보세요
+						</div>
+
+					</div>
+
+
+
+
+
+
+
+					<div class="row text-center">
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="/web_ex5/images/에어맥스.jpg" alt="에어맥스">
+								<p>
+									<strong>나이키 에어맥스 720</strong>
+								</p>
+								<p>라이프스타일 신발</p>
+								<button class="btn">BUY</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="/web_ex5/images/테크노.jpg" alt="테크노">
+								<p>
+									<strong>나이키 M2K 테크노</strong>
+								</p>
+								<p>라이프스타일 신발</p>
+								<button class="btn">BUY</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="/web_ex5/images/플라이.jpg" alt="플라이">
+								<p>
+									<strong>나이키 에어 베이퍼맥스 플라이니트</strong>
+								</p>
+								<p>라이프스타일 신발</p>
+								<button class="btn">BUY</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</section>
+	<!--Contents End  -->
+	
+	<!--Footer Start  -->
+	<footer>
+		<div class="footer-contents">
+			<div class="footer-nav">
+				<div class="uk-grid">
+					<div class="footer_1">
+						<p>
+							<a href="#">매장안내</a>
+						</p>
+						<p>
+							<a href="#">로그인</a>
+						</p>
+						<p>
+							<a href="#">회원가입</a>
+						</p>
+					</div>
+					<div class="footer_2">
+						<p class="footer_sub">
+							고객센터<br>
+						</p>
+						<p>
+							<a href="#">주문/결제</a><br>
+						</p>
+						<p>
+							<a href="#">배송</a><br>
+						</p>
+						<p>
+							<a href="#">주문배송조회</a><br>
+						</p>
+						<p>
+							<a href="#">멤버쉽 혜택/서비스</a><br>
+						</p>
+						<p>
+							<a href="#">공지사항</a><br>
+						</p>
+						<p>
+							<a href="#">1:1 채팅문의</a><br>
+						</p>
+					</div>
+					<div class="footer_2">
+						<p class="footer_sub">
+							ABOUT NIKE<br>
+						</p>
+						<p>
+							<a href="#">나이키에 대하여</a><br>
+						</p>
+					</div>
+					<div class="footer_2">
+						<p class="footer_sub">
+							SOCIAL<br>
+						</p>
+						<p>
+							<a href="#">트위터</a><br> <a href="#">페이스북</a><br> <a
+								href="#">유튜브</a><br> <a href="#">인스타그램</a><br>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer-copy">
+				<div class="uk-clear-fix">
+					<div class="uk-float-left">
+						<a href="http://www.nike.com/language_tunner" title="대한민국"> <span
+							class="flag-kr">대한민국</span>
+						</a> ⓒ 2019 Nike, Inc. All Rights Reserved
+					</div>
+					<div class="uk-float-right">
+						<a href="#">이용약관</a> <a href="#">개인정보처리방침</a>
+					</div>
+
+				</div>
+
+			</div>
+		<div class="footer-info"></div>
+			<div class="footer-maxwidth">
+				<div class="uk-width-midium"></div>
+				<div class="uk-width-midium2"></div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
